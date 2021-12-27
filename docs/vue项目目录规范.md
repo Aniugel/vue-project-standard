@@ -7,8 +7,8 @@
 |- src            // 源码目录
     |- api        // http 请求目录
     |- assets     // 静态资源目录，这里的资源会被wabpack构建
-        |- icon   // icon 存放目录
-        |- img    // 图片存放目录
+        |- icons   // icon 存放目录
+        |- images   // 图片存放目录
         |- js     // 公共 js 文件目录
         |- scss   // 公共样式 scss 存放目录
             |- frame.scss   // 入口文件

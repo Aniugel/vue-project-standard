@@ -1,25 +1,22 @@
 <template>
-  <div id="my-component">
-
-  </div>
+  <div id="my-component"></div>
 </template>
 
 <script>
 export default {
-  name: 'standard',
-  components: {
-  },
+  name: "standard",
+  components: {},
   mixins: [],
   props: {},
-  data () {
-    return {}
+  data() {
+    return {};
   },
   computed: {},
   watch: {},
-  created () { },
-  mounted () { },
+  created() {},
+  mounted() {},
   methods: {},
-}
+};
 </script>
 
 <style lang="scss" scoped>

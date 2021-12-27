@@ -1,0 +1,36 @@
+export default [{
+        id: 1,
+        txt: "首页",
+        mark: "home",
+        normalImg: require("../../../assets/images/home/ic_tab_home_normal.png"),
+        activeImg: require("../../../assets/images/home/ic_tab_home_active.png"),
+    },
+    {
+        id: 2,
+        txt: "书影音",
+        mark: "audio",
+        normalImg: require("../../../assets/images/home/ic_tab_audio_normal.png"),
+        activeImg: require("../../../assets/images/home/ic_tab_audio_active.png"),
+    },
+    {
+        id: 3,
+        txt: "广播",
+        mark: "broadcast",
+        normalImg: require("../../../assets/images/home/ic_tab_broadcast_normal.png"),
+        activeImg: require("../../../assets/images/home/ic_tab_broadcast_active.png"),
+    },
+    {
+        id: 4,
+        txt: "小组",
+        mark: "group",
+        normalImg: require("../../../assets/images/home/ic_tab_group_normal.png"),
+        activeImg: require("../../../assets/images/home/ic_tab_group_active.png"),
+    },
+    {
+        id: 5,
+        txt: "我的",
+        mark: "mine",
+        normalImg: require("../../../assets/images/home/ic_tab_mine_normal.png"),
+        activeImg: require("../../../assets/images/home/ic_tab_mine_active.png"),
+    },
+]

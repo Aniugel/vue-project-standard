@@ -5,6 +5,9 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+// 引入main.scss文件
+import './assets/scss/main.scss'
+
 new Vue({
   router,
   store,

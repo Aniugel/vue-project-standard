@@ -38,8 +38,8 @@ td {
 }
 
 img {
-  border: 0 none;
-  vertical-align: top;
+  display: block;
+  border: none;
 }
 
 i,
@@ -65,6 +65,17 @@ h6 {
   font-family: inherit;
 }
 
+b,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -73,6 +84,7 @@ table {
 a {
   text-decoration: none;
   color: #666;
+  outline: none;
 }
 
 body {
@@ -81,7 +93,7 @@ body {
   max-width: 640px;
   height: 100%;
   font-size: 14px;
-  fon-family: -apple-system, Helvetica, sans-serif;
+  font-family: -apple-system, Helvetica, sans-serif;
   line-height: 1.5;
   color: #666;
   -webkit-text-size-adjust: 100% !important;
@@ -93,4 +105,25 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  outline: none;
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.border0 {
+  border: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
 }
