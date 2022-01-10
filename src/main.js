@@ -8,8 +8,12 @@ Vue.config.productionTip = false
 // 引入main.scss文件
 import './assets/scss/main.scss'
 
+// 引入rem.js文件
+
+import './assets/javascript/base/rem.js'
+
 new Vue({
-  router,
-  store,
-  render: h => h(App)
+    router,
+    store,
+    render: h => h(App)
 }).$mount('#app')

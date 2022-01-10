@@ -7,7 +7,7 @@
 <script>
 export default {
   name: "home",
-  data() {
+  data () {
     return {};
   },
 };
@@ -17,5 +17,9 @@ export default {
 .home {
   background-color: pink;
   height: 100vh;
+  p {
+    // font-size: 0.2rem;
+    color: red;
+  }
 }
 </style>

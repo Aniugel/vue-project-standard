@@ -1,7 +1,12 @@
 <template>
-  <div class="tabitem" @click="change">
-    <span v-if="!flag"><slot name="normalImg"></slot></span>
-    <span v-else><slot name="activeImg"></slot></span>
+  <div class="tabitem"
+       @click="change">
+    <span v-if="!flag">
+      <slot name="normalImg"></slot>
+    </span>
+    <span v-else>
+      <slot name="activeImg"></slot>
+    </span>
     <!-- class属性绑定 -->
     <span :class="{ active: flag }"> {{ txt }} </span>
   </div>
@@ -16,7 +21,7 @@ export default {
 
   //计算属性
   computed: {
-    flag() {
+    flag () {
       if (this.mark === this.sel) {
         return true;
       }
@@ -24,7 +29,7 @@ export default {
     },
   },
   methods: {
-    change() {
+    change () {
       //让父组件去更改sel值
       // this.changeSelected(this.mark);
 

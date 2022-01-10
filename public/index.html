@@ -2,92 +2,92 @@
 <html lang="zh-CN">
 
 <head>
-  <!-- 默认数据 -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-  <title>web</title>
+    <!-- 默认数据 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>web</title>
 
-  <!-- 移动端Meta -->
-  <meta charset="UTF-8" />
-  <!-- width – viewport的宽度
+    <!-- 移动端Meta -->
+    <meta charset="UTF-8" />
+    <!-- width – viewport的宽度
   height – viewport的高度
   initial-scale – 初始的缩放比例
   minimum-scale – 允许用户缩放到的最小比例
   maximum-scale – 允许用户缩放到的最大比例
   user-scalable – 是否允许用户缩放 -->
-  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-  <!-- 为了防止页面数字被识别为电话号码，可根据实际需要添加： -->
-  <meta name="format-detection" content="telephone=no">
-  <!-- 让添加到主屏幕的网页再次打开时全屏展示，可添加： https://guide.aotu.io/docs/html/webapp.html   -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <!-- 为了防止页面数字被识别为电话号码，可根据实际需要添加： -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- 让添加到主屏幕的网页再次打开时全屏展示，可添加： https://guide.aotu.io/docs/html/webapp.html   -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="keywords" content="your keywords">
+    <meta name="description" content="your description">
+    <meta name="author" content="author,email address">
+    <meta name="robots" content="index,follow">
+    <meta name="renderer" content="ie-stand">
+    <meta name="copyright" content="kingdee" />
+
+    <!-- S DNS预解析 -->
+    <link rel="dns-prefetch" href="">
+    <!-- E DNS预解析 -->
+
+    <!-- S 线上样式页面片，开发请直接取消注释引用 -->
+    <!-- #include virtual="" -->
+    <!-- E 线上样式页面片 -->
+
+    <!-- S 本地调试，根据开发模式选择调试方式，请开发删除 -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- /本地调试方式 -->
+
+    <link rel="stylesheet" href="http://srcPath/index.css">
+    <!-- /开发机调试方式 -->
+    <!-- E 本地调试 -->
+
+    <!-- pc端Meta -->
+    <!-- <meta charset="UTF-8">
   <meta name="keywords" content="your keywords">
   <meta name="description" content="your description">
   <meta name="author" content="author,email address">
   <meta name="robots" content="index,follow">
   <meta name="renderer" content="ie-stand">
-  <meta name="copyright" content="kingdee" />
-
-  <!-- S DNS预解析 -->
-  <link rel="dns-prefetch" href="">
-  <!-- E DNS预解析 -->
-
-  <!-- S 线上样式页面片，开发请直接取消注释引用 -->
-  <!-- #include virtual="" -->
-  <!-- E 线上样式页面片 -->
-
-  <!-- S 本地调试，根据开发模式选择调试方式，请开发删除 -->
-  <link rel="stylesheet" href="css/index.css">
-  <!-- /本地调试方式 -->
-
-  <link rel="stylesheet" href="http://srcPath/index.css">
-  <!-- /开发机调试方式 -->
-  <!-- E 本地调试 -->
-
-  <!-- pc端Meta -->
-  <meta charset="UTF-8">
-  <meta name="keywords" content="your keywords">
-  <meta name="description" content="your description">
-  <meta name="author" content="author,email address">
-  <meta name="robots" content="index,follow">
-  <meta name="renderer" content="ie-stand">
-  <title>PC端HTML模版</title>
+  <title>PC端HTML模版</title> -->
 
 </head>
 
 <body>
-  <noscript>
+    <noscript>
     <strong>We're sorry but web doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
   </noscript>
-  <div id="app"></div>
-  <!-- built files will be auto injected -->
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
 </body>
 
 <!-- 不需要为 CSS、JS 指定类型属性，HTML5 中默认已包含 -->
 <script>
-  // 页面跳转
-  if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-    // window.location.href = "PC端专题地址" + location.search;
-  }
-  // 移动端rem布局
-  // (function (doc, win) {
-  //   var docEl = doc.documentElement,
-  //     resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-  //     recalc = function () {
-  //       var clientWidth = docEl.clientWidth;
-  //       if (!clientWidth) return;
-  //       if (clientWidth >= 640) {
-  //         // docEl.style.fontSize = '100px';
-  //       } else {
-  //         docEl.style.fontSize = 200 * (clientWidth / 750) + 'px'; // 1rem=100px
-  //       }
-  //     };
-  //   if (!doc.addEventListener) return;
-  //   win.addEventListener(resizeEvt, recalc, false);
-  //   doc.addEventListener('DOMContentLoaded', recalc, false);
-  // })(document, window);
+    // 页面跳转
+    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        // window.location.href = "PC端专题地址" + location.search;
+    }
+    // 移动端rem布局
+    // (function (doc, win) {
+    //   var docEl = doc.documentElement,
+    //     resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    //     recalc = function () {
+    //       var clientWidth = docEl.clientWidth;
+    //       if (!clientWidth) return;
+    //       if (clientWidth >= 640) {
+    //         // docEl.style.fontSize = '100px';
+    //       } else {
+    //         docEl.style.fontSize = 200 * (clientWidth / 750) + 'px'; // 1rem=100px
+    //       }
+    //     };
+    //   if (!doc.addEventListener) return;
+    //   win.addEventListener(resizeEvt, recalc, false);
+    //   doc.addEventListener('DOMContentLoaded', recalc, false);
+    // })(document, window);
 </script>
 
 </html>

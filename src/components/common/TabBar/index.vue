@@ -16,40 +16,45 @@
       <img src="../../assets/images/home/logo.png" :alt="n" />
     </div> -->
 
-    <router-link
-      class="tab-bar-item"
-      tag="div"
-      v-for="foot in footers"
-      :to="'/' + foot.mark"
-      :key="foot.id + 'id'"
-    >
-      <br />
-      <span v-if="!(foot.mark === selected)"
-        ><img :src="foot.normalImg" :alt="foot.mark"
-      /></span>
-      <span v-else> <img :src="foot.activeImg" :alt="foot.mark" /></span>
+    <div class="tab-bar-item"
+         v-for="foot in footers"
+         @click="handleLinkTo(foot.mark)"
+         :key="foot.id + 'id'">
+      <span v-if="!(foot.mark === selected)"><img :src="foot.normalImg"
+             :alt="foot.mark" /></span>
+      <span v-else> <img :src="foot.activeImg"
+             :alt="foot.mark" /></span>
       <span :class="{ active: foot.mark === selected }">{{ foot.txt }}</span>
-    </router-link>
+    </div>
   </div>
 </template>
 
 <script>
 // import TabItem from "./TabItem";
 import footer from "./footer-data";
-
 export default {
   name: "tab-bar",
   // components: {
   //   TabItem,
   // },
-  data() {
+  mounted () {
+  },
+  data () {
     return {
-      selected: this.$route.name,
+      selected: window.location.pathname.replace(/\//g, ''),
       footers: footer,
     };
   },
   computed: {},
-  methods: {},
+  methods: {
+    handleLinkTo (val) {
+      let isCurrentPage = window.location.pathname.replace(/\//g, '')
+      if (isCurrentPage !== val) {
+        this.selected = val
+        this.$router.push('/' + val)
+      }
+    }
+  },
 };
 </script>
 
