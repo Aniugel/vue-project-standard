@@ -3,17 +3,19 @@
     <footer>
       <tab-bar></tab-bar>
     </footer>
-    <main><router-view /></main>
+    <main>
+      <router-view />
+    </main>
   </div>
 </template>
 
 <script>
-import TabBar from "@/components/Common/TabBar";
+import TabBar from "@/components/common/TabBar";
 
 export default {
   name: "app",
   components: { TabBar },
-  data() {
+  data () {
     return {};
   },
 };
